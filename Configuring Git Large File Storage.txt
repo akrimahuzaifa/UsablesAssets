@@ -1,0 +1,32 @@
+https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage
+
+
+1. Open Git Bash.
+
+2. Change your current working directory to an existing repository you'd like to use with Git LFS.
+
+3. To associate a file type in your repository with Git LFS, enter git lfs track followed by the name of the file extension you want to automatically upload to Git LFS.
+
+For example, to associate a .psd file, enter the following command:
+
+$ git lfs track "*.psd"
+> Adding path *.psd
+
+
+4. Add a file to the repository matching the extension you've associated:
+
+$ git add path/to/file.psd
+
+
+
+5. Commit the file and push it to GitHub:
+
+$ git commit -m "add file.psd"
+$ git push
+
+
+
+
+
+
+
